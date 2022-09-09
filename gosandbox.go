@@ -1,9 +1,9 @@
 package main
 
-import "fmt"
-import "github.com/Mstuart712/gosandbox/workers"
+//import "github.com/Mstuart712/gosandbox/workers"
+import "github.com/Mstuart712/gosandbox/leetcode"
 
 func main() {
-	fmt.Println("Hey world!")
-	workers.StartWorkerGroup()
+
+	leetcode.StartProblem()
 }
