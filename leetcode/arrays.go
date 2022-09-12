@@ -7,7 +7,7 @@ import (
 )
 
 func StartProblem() {
-	arr2 := []int{7,1,5,3,6,4}
+	arr2 := []int{1,2,3,4,5}
 	fmt.Println(maxProfit(arr2))
 }
 
@@ -26,17 +26,13 @@ func removeDuplicates(nums []int) int {
 }
 
 func maxProfit(prices []int) int {
-	a := 0
-    for i := 0; i < len(prices); i++ {
-		if i + 1 < len(prices) && prices[i] < prices[i + 1] {
-			for j := i; j < len(prices); j++ {
-				if prices[j + 1] <  prices[j] {
-					a = a + (prices[j] - prices[i])
-					i = j
-					break
-				} 	
-			}
-		}
-	}
-	return a
+  a := 0
+
+  for i := 1; i < len(prices); i++ {
+    if prices[i] > prices[i - 1] {
+      a += prices[i] - prices[i - 1]	
+    }
+  }
+
+  return a
 }
