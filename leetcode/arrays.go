@@ -26,6 +26,7 @@ func singleNumber(nums []int) int {
       return key
     }
   }
+  return 0
 }
 
 func containsDuplicate(nums []int) bool {

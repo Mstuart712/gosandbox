@@ -5,5 +5,5 @@ import "github.com/Mstuart712/gosandbox/leetcode"
 
 func main() {
 
-	leetcode.StartProblem()
+	leetcode.StartLinkedProblem()
 }
